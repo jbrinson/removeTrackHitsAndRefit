@@ -1,0 +1,13 @@
+Executable              = /sharesoft/osg/app/cmssoft/cms/slc5_amd64_gcc462/cms/cmssw/CMSSW_5_3_9/bin/slc5_amd64_gcc462/cmsRun
+
+Universe                = vanilla
+Getenv                  = True
+Arguments               = DemoTrackAnalyzerCondor_2_cfg.py $(Process) 
+
+Output                  = analyzerOutput_2/condor_$(Process).out
+Error                   = analyzerOutput_2/condor_$(Process).err
+Log                     = analyzerOutput_2/condor_$(Process).log
++IsLocalJob             = true
+Rank                    = TARGET.IsLocalSlot
+
+Queue 500

@@ -1,0 +1,7 @@
+----- Begin Fatal Exception 13-Nov-2013 13:19:50 CET-----------------------
+An exception of category 'ConfigFileReadError' occurred while
+   [0] Processing the python configuration file named DemoTrackAnalyzer_cfg.py
+Exception Message:
+python encountered the error: <type 'exceptions.IOError'>
+[Errno 2] No such file or directory: 'DemoTrackAnalyzer_cfg.py'
+----- End Fatal Exception -------------------------------------------------
